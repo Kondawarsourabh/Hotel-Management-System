@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Registration</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url("Owall-Hotel-Seoul-Exterior.jpeg");
+        background-repeat:no-repeat;
+        background-position: inherit;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      
+    }
+
+    .container {
+    position: absolute;
+      max-width: 300px;
+      margin: 50px auto;
+      background-color: #ffffff00;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      margin-bottom: 1rem;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Registration</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  <div class="container">
+    <h2 class="mb-4">Admin Registration</h2>
+    <form action="adminregistration" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter the Name" class="form-control" id="name" name="adminname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter the Email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter the Password" class="form-control" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" placeholder="Enter the Phone Number" class="form-control" id="phone" name="contactnumber" pattern="[0-9]{10}" required>
+        <!-- <small class="form-text text-muted">Format: 1234567890</small> -->
+      </div>
+
+      <button type="submit" class="button btn btn-dark">Register</button>
+    </form>
+  </div>
+</div>
+  <!-- Bootstrap JS and Popper.js CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
